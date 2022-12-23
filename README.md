@@ -17,6 +17,7 @@ Sqlmap
 '
 ' OR 1=1
 ' OR '1'='1
+' OR 'True'='True
 'pg_sleep(5) --+-
 " or sleep(5)="
 ' or sleep(5)='
